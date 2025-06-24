@@ -24,7 +24,7 @@ const Form = () => {
         try {
             axios.post("https://api-cyberspacecb.vercel.app/messages", {
                 user_id: userid,
-                message: CryptoJS
+                message: message
             })
                 .then((res) => {
                     setDone(true)
